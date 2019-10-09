@@ -1,22 +1,22 @@
 [
   {
     "uri": "_default",
-    "title": "Qc-911"
+    "title": "Simple"
   },
   {
-    "uri": "qc911",
-    "title": "Protection de la Faune",
+    "uri": "protection",
+    "title": "Protection de la Faune"
   },
   {
-    "uri": "embacle",
-    "title": "Embâcle (analyse temporelle)"
+    "uri": "timeFilter",
+    "title": "Filtre temporel (Time filter)"
   },
   {
-    "uri": "Événements",
-    "title": "evenements"
+    "uri": "ogcFilters",
+    "title": "Filtre attributaire (Attribute filter)"
   },
   {
     "uri": "mapOverlay",
-    "title": "Map overlay Demo"
+    "title": "Superposition de carte (Map overlay)"
   }
 ]
