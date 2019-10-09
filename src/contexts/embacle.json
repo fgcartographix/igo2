@@ -1,36 +1,14 @@
 {
   "uri": "embacle",
-  "title": "Embâcle (analyse temporelle)",
-  "map": {
-    "view": {
-      "projection": "EPSG:3857",
-      "center": [-72, 48],
-      "zoom": 7
-    }
-  },
+  "base": "_base",
   "layers": [
-    {
-      "title": "OSM",
-      "baseLayer": true,
-      "sourceOptions": {
-        "type": "osm"
-      }
-    },
-    {
-      "title": "Fond de carte du Québec",
-      "visible": true,
-      "baseLayer": true,
-      "sourceOptions": {
-        "type": "xyz",
-        "url": "https://geoegl.msp.gouv.qc.ca/apis/carto/tms/1.0.0/carte_gouv_qc_public@EPSG_3857/{z}/{x}/{-y}.png"
-      }
-    },
     {
       "title": "WFS",
       "sourceOptions": {
         "type": "wfs",
         "url": "https://geoegl.msp.gouv.qc.ca/apis/ws/igo_gouvouvert.fcgi",
         "params": {
+          "queryable": true,
           "featureTypes": "vg_observation_v_autre_wmst",
           "fieldNameGeometry": "geometry",
           "maxFeatures": 10000,
@@ -67,55 +45,19 @@
         },
         "timeFilterable": true,
         "timeFilter": {
-          "min": "2017-01-01",
-          "max": "2018-01-01",
-          "range": true,
-          "type": "datetime"
+          "min": "2013",
+          "max": "2019",
+          "range": false,
+          "type": "year",
+          "style": "slider",
+          "step": 1,
+          "timeInterval": 2000
         }
       },
       "metadata": {
         "url": "https://www.donneesquebec.ca/recherche/fr/dataset/historique-publique-d-embacles-repertories-au-msp",
         "extern": true
       }
-    }
-  ],
-  "toolbar": [
-    "searchResults",
-    "contextManager",
-    "mapDetails",
-    "timeAnalysis",
-    "print",
-    "ogcFilter"
-  ],
-  "tools": [
-    {
-      "name": "searchResults",
-      "options": {
-        "focusFirst": false
-      }
-    },
-    {
-      "name": "contextManager"
-    },
-    {
-      "name": "ogcFilter"
-    },
-    {
-      "name": "mapDetails",
-      "options": {
-        "toggleLegendOnVisibilityChange": false,
-        "ogcFiltersInLayers": true,
-        "layerListControls": {
-          "showToolbar": "never",
-          "excludeBaseLayers": false
-        }
-      }
-    },
-    {
-      "name": "timeAnalysis"
-    },
-    {
-      "name": "print"
     }
   ]
 }

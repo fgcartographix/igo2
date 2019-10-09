@@ -1,15 +1,19 @@
 [
   {
     "uri": "_default",
-    "title": "Default Context"
+    "title": "Qc-911"
   },
   {
     "uri": "qc911",
-    "title": "Qc-911"
+    "title": "Protection de la Faune",
   },
   {
     "uri": "embacle",
     "title": "Embâcle (analyse temporelle)"
+  },
+  {
+    "uri": "Événements",
+    "title": "evenements"
   },
   {
     "uri": "mapOverlay",
