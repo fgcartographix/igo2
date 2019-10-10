@@ -2,7 +2,8 @@
   "uri": "protection",
   "title": "Protection de la Faune",
   "base": "_base",
-  "layers": [{
+  "layers": [
+    {
       "sourceOptions": {
         "optionsFromCapabilities": true,
         "url": "https://geoegl.msp.gouv.qc.ca/apis/ws/igo_gouvouvert.fcgi",
@@ -10,7 +11,8 @@
           "layers": "mffp_dgpf_limites_regions_s",
           "version": "1.3.0"
         },
-        "type": "wms"
+        "type": "wms",
+        "queryTitle": "reg_adm"
       }
     },
     {
@@ -21,7 +23,8 @@
           "layers": "mffp_dgpf_bureaux_locaux_p",
           "version": "1.3.0"
         },
-        "type": "wms"
+        "type": "wms",
+        "queryTitle": "nom_du_bureau"
       }
     }
   ]

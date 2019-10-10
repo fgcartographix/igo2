@@ -29,11 +29,6 @@ export const environment: Environment = {
           id: 'glace',
           title: 'Carte de glace',
           url: 'https://geoegl.msp.gouv.qc.ca/apis/ws/radarsat.fcgi'
-        },
-        {
-          id: 'bdga',
-          title: 'Données géographiques et administratives (BDGA)',
-          url: 'https://geoegl.msp.gouv.qc.ca/apis/ws/bdga.fcgi'
         }
       ]
     },

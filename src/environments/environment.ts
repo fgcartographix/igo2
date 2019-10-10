@@ -38,11 +38,6 @@ export const environment: Environment = {
           id: 'glace',
           title: 'Carte de glace',
           url: '/apis/ws/radarsat.fcgi'
-        },
-        {
-          id: 'bdga',
-          title: 'Données géographiques et administratives (BDGA)',
-          url: '/apis/ws/bdga.fcgi'
         }
       ]
     },
