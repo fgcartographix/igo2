@@ -60,5 +60,18 @@
         }
       }
     }
+  ],
+  "toolbar": [
+    "searchResults",
+    "contextManager",
+    "mapDetails",
+    "ogcFilter",
+    "measurer",
+    "directions",
+    "catalog",
+    "importExport",
+    "print",
+    "shareMap",
+    "about"
   ]
 }
